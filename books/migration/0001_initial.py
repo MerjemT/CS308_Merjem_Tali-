@@ -3,13 +3,8 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
-
-    dependencies = [
-    ]
-
-    operations = [
+operations = [
         migrations.CreateModel(
             name='Author',
             fields=[
@@ -18,7 +13,8 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=25)),
             ],
         ),
-        migrations.CreateModel(
+        
+migrations.CreateModel(
             name='Book',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
